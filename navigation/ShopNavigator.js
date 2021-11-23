@@ -2,18 +2,18 @@ import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
-import Categories from '../screens/Categories';
-import Products from '../screens/Products';
-import Detail from '../screens/Detail';
+import Mesa from '../screens/Mesa';
+import Productos from '../screens/Productos';
+import Agregar from '../screens/Agregar';
 
 const Stack = createNativeStackNavigator();
 
 const ShopNavigator = () => (
   <NavigationContainer>
-    <Stack.Navigator initialRouteName="Home">
-      <Stack.Screen name="Shop" component={Categories} />
-      <Stack.Screen name="Products" component={Products} />
-      <Stack.Screen name="Detail" component={Detail} />
+    <Stack.Navigator initialRouteName="Inicio">
+      <Stack.Screen name="Mesa" component={Mesa} />
+      <Stack.Screen name="Productos" component={Productos} />
+      <Stack.Screen name="Agregar" component={Agregar} />
     </Stack.Navigator>
   </NavigationContainer>
 );
